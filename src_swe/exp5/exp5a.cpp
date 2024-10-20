@@ -6,6 +6,7 @@ int melody[] = {NOTE_A6, NOTE_FS6, NOTE_G6, NOTE_A6, NOTE_FS6, NOTE_G6, NOTE_A6,
 int noteDurations[] = {8, 16, 16, 8, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 8, 16, 16, 8, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 8, 16, 16, 8, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 8, 16, 16, 8, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16};
 
 void setup() {
+    delay(5000);
     pinMode(speaker,OUTPUT);    
     for (int i = 0; i < 56; i++) {          
         int noteDuration = 2500 / noteDurations[i];       
