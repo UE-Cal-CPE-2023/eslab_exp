@@ -8,6 +8,7 @@ void setup() {
     Serial.begin(9600);
     pinMode(speaker, OUTPUT);
 }
+
 void loop() {
     // calibrate the sensor:
     int maxVal = 1000; //Change this value depending on the sensor reading
@@ -16,5 +17,5 @@ void loop() {
     Serial.println(sensorReading);
     int thisPitch = map(sensorReading, minVal, maxVal, 120, 1500);
     tone(speaker, thisPitch, 10);
-    delay(10);        
+    delay(10);
 }
