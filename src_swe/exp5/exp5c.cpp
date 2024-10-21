@@ -13,7 +13,7 @@ void loop() {
     for (int thisSensor = 0; thisSensor < 3; thisSensor++) {
         int sensorReading = analogRead(thisSensor);
         if (sensorReading > threshold) {
-        tone(speaker, notes[thisSensor]);
+            tone(speaker, notes[thisSensor]);
         } 
         noTone(speaker);
     }
