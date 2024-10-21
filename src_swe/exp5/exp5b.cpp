@@ -11,8 +11,8 @@ void setup() {
 
 void loop() {
     // calibrate the sensor:
-    int maxVal = 1000; //Change this value depending on the sensor reading
-    int minVal = 400; //Change this value depending on the sensor reading
+    int maxVal = 500; //Change this value depending on the sensor reading
+    int minVal = 350; //Change this value depending on the sensor reading
     int sensorReading = analogRead(ldr);
     Serial.println(sensorReading);
     int thisPitch = map(sensorReading, minVal, maxVal, 120, 1500);
